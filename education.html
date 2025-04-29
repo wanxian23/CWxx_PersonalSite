@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="icon" href="Image/me/tabLogo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Use to apply logo from Internet "Boxicons Website" -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 3%;
+            padding: 2% 2% 4% 2%;
+            justify-content: space-between;
+            border: 1px solid;
+            box-shadow: 1px 1px 15px 1px gray;
+            width: 60%;
+            margin: 60px auto;
+            transition: 0.2s;
+            word-break: break-word;
+            border-radius: 10px;
+        }
+
+        main:hover {
+            box-shadow: 1px 1px 15px 1px black;
+        }
+
+        main article {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        main article div.borderSchool {
+            display: flex;
+            justify-content: space-between;
+            padding: 5% 5%;
+            gap: 5%;
+            border-radius: 10px;
+            width: 90%;
+            margin: 0 auto 0 auto;
+            box-shadow: 1px 1px 15px 1px gray;
+            background-color: lightblue;
+            transition: 0.2s;
+        }
+
+        main article div.borderSchool:hover {
+            width: 91%;
+            box-shadow: 1px 1px 15px 1px black;
+            cursor: pointer;
+        }
+
+        main article div.schoolContent {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        main article div.schoolContent h3 {
+            font-size: 20px;
+        }
+
+        main article div img {
+            width: 30%;
+            border-radius: 20px;
+            box-shadow: 1px 1px 15px 1px gray;
+            transition: 0.2s;
+        }
+
+        main article div img:hover {
+            box-shadow: 1px 1px 15px 1px rgb(87, 87, 87);
+        }
+
+        main article div span {
+            font-weight: bold;
+            color: darkblue;
+            font-size: 18px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                width: 80%;
+                padding: 2% 5% 8% 5%;
+            }
+
+            main h1 {
+                font-size: 26px;
+            }
+
+            main article div.borderSchool {
+                flex-direction: column;
+            }
+
+            main article div.borderSchool h3 {
+                text-align: center;
+            }
+
+            main article div img {
+                order: 1;
+                width: 70%;
+                margin: 10px auto 0 auto;
+            }
+
+            main article div.schoolContent {
+                order: 2;
+                font-size: 15px;
+            }
+
+            main article div span {
+                display: block;
+                font-size: 16px;
+            }
+
+            main article div.schoolContent h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html" class="img"></a>
+            <a href="index.html" class="text">
+                <h1>CWXxx Web</h1>
+            </a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <box-icon name='menu' id="burgerIcon"></box-icon>
+    </header>
+
+    <main>
+        <h1 class="center">My Education</h1>
+        <article>
+            <div class="borderSchool" id="primarySchool">
+                <div class="schoolContent">
+                    <h3>Primary School</h3>
+                    <label for="primarySchool">Study At <span>SJKC Serdang Baru 1</span> Since <span>2012</span></label>
+                </div>
+                <img src="Image/school/primarySchool.jpg" alt="primarySchoo">
+
+            </div>
+
+            <div class="borderSchool" id="secondarySchool">
+                <div class="schoolContent">
+                    <h3>Secondary School</h3>
+                    <label for="secondarySchool">Study At <span>SMK Seri Kembangan</span> Since
+                        <span>2019</span></label>
+                </div>
+                <img src="Image/school/secondarySchool.jpg" alt="secondarySchool">
+            </div>
+
+            <div class="borderSchool" id="university">
+                <div class="schoolContent">
+                    <h3>University</h3>
+                    <label for="primarySchool">Study At <br><span>University Teknikal Malaysia Melaka</span> Since
+                        <span>2023</span></label>
+                </div>
+                <img src="Image/school/university.jpeg" alt="University">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+        <div id="socialMedia">
+            <h2>My Social Media</h2>
+            <a href="https://x.com/_wanxian_23" id="x" target="_blank"></a>
+            <a href="https://www.facebook.com/wanxian.chong5/" id="fb" target="_blank"></a>
+            <a href="https://www.instagram.com/_wanxian_23/" id="ig" target="_blank"></a>
+            <a href="https://www.youtube.com/@_wanxian_23" id="yt" target="_blank"></a>
+        </div>
+
+        <div class="embed-map-fixed" role="schoolGoogleMap">
+            <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Universiti%20Teknikal%20Malaysia%20Melaka&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
+                    href="https://sprunkiretake.net"
+                    style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki
+                    retake</a></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("primarySchool").addEventListener("click", function () {
+            window.open("https://www.facebook.com/serdangbaru1/?locale=ms_MY", "_blank");
+        });
+
+        document.getElementById("secondarySchool").addEventListener("click", function () {
+            window.open("https://www.facebook.com/smkserikembangan/?locale=ms_MY", "_blank");
+        });
+
+        document.getElementById("university").addEventListener("click", function () {
+            window.open("https://www.utem.edu.my/en/", "_blank");
+        });
+    </script>
+</body>
+
+</html>

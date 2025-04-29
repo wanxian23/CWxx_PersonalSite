@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skiils</title>
+    <link rel="icon" href="Image/me/tabLogo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Use to apply logo from Internet "Boxicons Website" -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main box-icon#arrowRightIcon {
+            opacity: 0;
+        }
+
+        main nav box-icon#arrowLeftIcon {
+            visibility: hidden;
+            position: fixed;
+        }
+
+        main nav {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(245, 243, 243);
+            margin-top: 89px;
+            width: 15%;
+            height: 100%;
+            position: fixed;
+        }
+
+        main nav h2 {
+            padding: 0 20px;
+        }
+
+        main nav a {
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+            transition: 0.2s;
+        }
+
+        main nav a:hover {
+            font-weight: bold;
+            border-right: 5px solid red;
+        }
+
+        main nav a:active {
+            color: white;
+            border-right: 0;
+        }
+
+        main article {
+            margin-top: 100px;
+            margin-left: 20%;
+        }
+
+        main article a {
+            scroll-margin-top: 130px;
+        }
+
+        @media (min-width: 400px) and (max-width: 800px) {
+            main box-icon#arrowRightIcon {
+                opacity: 1;
+                position: fixed;
+                margin-top: 89px;
+                height: 60px;
+                background-color: white;
+                cursor: pointer;
+                transition: margin-top 0.8s, margin-left 0.3s;
+            }
+
+            main nav box-icon#arrowLeftIcon {
+                visibility: visible;
+                margin-left: 40%;
+                opacity: 1;
+                position: fixed;
+                height: 50px;
+                background-color: white;
+                cursor: pointer;
+                transition: margin-left 0.3s;
+            }
+
+            main nav {
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(245, 243, 243);
+                margin-top: 89px;
+                width: 0%;
+                height: 100%;
+                opacity: 0;
+                font-size: 14px;
+                transition: opacity 0.3s, width 0.3s;
+            }
+
+            main nav a {
+                padding: 15px;
+                text-decoration: none;
+                color: black;
+                transition: 0.2s;
+            }
+
+            main nav.show {
+                visibility: visible;
+                width: 40%;
+                opacity: 1;
+                transition: opacity 0.3s, width 0.3s;
+            }
+
+            main article {
+                margin: 85px 5% 20px 8%
+            }
+
+            main article a {
+                scroll-margin-top: 110px;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 1200px) {
+            main nav {
+                margin-top: 71px;
+                width: 26%;
+                height: 100%;
+                position: fixed;
+            }
+
+            main article {
+                margin-top: 100px;
+                margin-left: 28%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html" class="img"></a>
+            <a href="index.html" class="text">
+                <h1>CWXxx Web</h1>
+            </a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <box-icon name='menu' id="burgerIcon"></box-icon>
+    </header>
+    <main>
+        <box-icon type='solid' name='right-arrow' id="arrowRightIcon"></box-icon>
+
+        <nav>
+            <box-icon type='solid' name='left-arrow' id="arrowLeftIcon"></box-icon>
+            <h2>My Skills</h2>
+            <a href="#project" class="linkStyle">Project</a>
+            <a href="#language" class="linkStyle">Language</a>
+            <a href="#progLanguage" class="linkStyle" class="linkStyle">Programming Language</a>
+            <a href="#activity" class="linkStyle">Extracurricular Activities</a>
+            <a href="#internship" class="linkStyle">Internship Experience</a>
+            <a href="#award" class="linkStyle">Awards & Honors</a>
+        </nav>
+
+        <article>
+            <div role="projects">
+                <a name="project">
+                    <h3>Projects</h3>
+                </a>
+
+                <ol>
+                    <b>
+                        <li>Learning Management System</li>
+                    </b>
+
+                    <ul>
+                        <li>Database</li>
+                        <li>Developed using Structured Query Language (SQL)</li>
+                        <li>Project involved: </li>
+                        <ul>
+                            <li>Entity Relation Diagram (ERD)</li>
+                            <li>Business Rule</li>
+                            <li>Data Dictionary</li>
+                            <li>Script for table and data</li>
+                        </ul>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        <li>A Simple Calculator</li>
+                    </b>
+
+                    <ul>
+                        <li>Computer Organization and Architecture</li>
+                        <li>Developed using MARS Assembly Language</li>
+                        <li>Users are allow to: </li>
+                        <ul>
+                            <li>Input several numbers</li>
+                            <li>Make calculation (Addition or Subtraction)</li>
+                        </ul>
+                        <li>System will generate result based on user input</li>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        <li>Friendship Boundaries Animation</li>
+                    </b>
+
+                    <ul>
+                        <li>Multimedia System</li>
+                        <li>Created using Adobe Animate</li>
+                        <li>Animation involve: </li>
+                        <ul>
+                            <li>2 Main characters: Tom and Leo</li>
+                            <li>1 Summary character: Leo's Mom</li>
+                            <li>Quote of the story: Don't let others use your kindness as a weakness</li>
+                        </ul>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        <li>Paging and Segmentation</li>
+                    </b>
+
+                    <ul>
+                        <li>Operating System</li>
+                        <li>Created using Canvas and Adobe Illustrator</li>
+                        <li>Animation involve: </li>
+                        <ul>
+                            <li>Building as page or segment</li>
+                            <li>Resident as process</li>
+                            <li>About: Differences between paging and segmentation</li>
+                        </ul>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        <li>TraveBo</li>
+                    </b>
+
+                    <ul>
+                        <li>Human Computer and Interaction</li>
+                        <li>Built using Visily</li>
+                        <li>Project involved: </li>
+                        <ul>
+                            <li>User Interface (UI) design of wireframes</li>
+                            <li>High fidelity interface</li>
+                            <li>3 platforms: Mobile, Tablet, and Desktop Website</li>
+                        </ul>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        <li>Currency Exchange System</li>
+                    </b>
+
+                    <ul>
+                        <li>Programming I and II</li>
+                        <li>Developed using C++ Programming Language</li>
+                        <li>User are allow to: </li>
+                        <ul>
+                            <li>Enter their personal information</li>
+                            <li>Enter a price to convert</li>
+                            <li>Select a country to be converted</li>
+                        </ul>
+                        <li>System will generate result based on user input</li>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        <li>University Accomodation System</li>
+                    </b>
+
+                    <ul>
+                        <li>System Analysis and Design</li>
+                        <li>Project involved: </li>
+                        <ul>
+                            <li>System Development Methodology</li>
+                            <li>Project Charter</li>
+                            <li>Gantt Chart</li>
+                            <li>Context Diagram</li>
+                            <li>Data Flow Diagram Level-0</li>
+                            <li>Data Flow Diagram Level-1</li>
+                            <li>Entity Relation Diagram</li>
+                            <li>Input and Output Design</li>
+                        </ul>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        <li>Password Reuse</li>
+                    </b>
+
+                    <ul>
+                        <li>Computer Security</li>
+                        <li>Animation involved: </li>
+                        <ul>
+                            <li>5 Main Characters: Sofia, Angeline, Emily, Lily, and Bryan</li>
+                            <li>About: 1 boy date with 4 girls, end up with based result</li>
+                            <li>Quotes: Avoid using the same password just as Bryan using the same gifts for all girls
+                            </li>
+                        </ul>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        <li>Contact Directory</li>
+                    </b>
+
+                    <ul>
+                        <li>Data Structure and Algorithm</li>
+                        <li>Developed using C++ Programming Language</li>
+                        <li>Users are allow to: </li>
+                        <ul>
+                            <li>Add/ Edit/ Delete a Contact</li>
+                            <li>Search for a contact based on alphabet</li>
+                            <li>Make order (Either ascending or descending)</li>
+                            <li>Display all the contacts</li>
+                            <li>Quit the program</li>
+                        </ul>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        <li>Car Selling System</li>
+                    </b>
+
+                    <ul>
+                        <li>Object-oriented Programming</li>
+                        <li>Developed using Java Programming Language</li>
+                        <li>Users are allow to: </li>
+                        <ul>
+                            <li>Login into/ Sign up for an account</li>
+                            <li>Browse cars based on their preferences</li>
+                            <li>Make payment</li>
+                            <li>Download receipt</li>
+                            <li>Quit the program</li>
+                        </ul>
+                        <li>User information will automatically save into an input file</li>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        <li>GentleGlow Studio</li>
+                    </b>
+
+                    <ul>
+                        <li>Data Communication and Networking</li>
+                        <li>Built a blogger</li>
+                        <li>Blogger involved: </li>
+                        <ul>
+                            <li>Video Explanation/ Presentation</li>
+                            <li>Introduction of Team Members and Roles</li>
+                            <li>Overview of the organization</li>
+                            <li>Details of office location and layout</li>
+                            <li>Network requirements for each department</li>
+                            <li>Target user and specifications</li>
+                            <li>Proposed hardware and software</li>
+                            <li>Proposed network topology and design</li>
+                            <li>IP addressing</li>
+                            <li>Internet access and ISP comparison</li>
+                        </ul>
+                    </ul>
+                </ol>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <div role="myLanguage">
+                <a name="language">
+                    <h3>Speaking/ Writing Language</h3>
+                </a>
+                <ol>
+                    <li>English</li>
+                    <li>Malay</li>
+                    <li>Chinese</li>
+                </ol>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <div role="myLanguage">
+                <a name="progLanguage">
+                    <h3>Programming Language</h3>
+                </a>
+                <ol>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Assembly Language (MIPS)</li>
+                    <li>Structured Query Language</li>
+                    <li>Hypertext Markup Language (HTML)</li>
+                    <li>Cascading Style Sheet (CSS)</li>
+                    <li>JavaScript</li>
+                    <li>Preproccessor Language (PHP)</li>
+                </ol>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <div role="myExtracurricular_Activities">
+                <a name="activity">
+                    <h3>Extracurricular Activities</h3>
+                </a>
+                <ol>
+                    <li>Entrepreneurship</li>
+                    <ul>
+                        <li>Printer Services in UTeM</li>
+                        <li>Communicate using Whatsapp</li>
+                    </ul>
+
+                    <br>
+
+                    <li>Chess</li>
+                </ol>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <div role="myInternship_Experience">
+                <a name="internship">
+                    <h3>Internship Experience</h3>
+                </a>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <div role="nyAward_Honors">
+                <a name="award">
+                    <h3>Award & Honors</h3>
+                </a>
+                <ol>
+                    <li><strong>Certificate of Recognition as a Mentor in SMK Seri Kembangan</strong></li>
+                    <ul>
+                        <li>Taught and guided Forms 4 and 5 students in completing web programming projects, an Online
+                            Shopping System.</li>
+                    </ul>
+
+                    <br>
+
+                    <li><strong>CodeWorld 2024 Competition</strong></li>
+                    <ul>
+                        <li>Achieved First Runner-Up by developing efficient C++ solutions</li>
+                        <li>Example of solution was built a simple program to calculate monthly loan payments within a
+                            2-hour time constraint.</li>
+                    </ul>
+
+                    <br>
+
+                    <li><strong>CodeCraft Challenge</strong></li>
+                    <ul>
+                        <li>Achieved First Place by answering C++ programming questions.</li>
+                    </ul>
+                </ol>
+
+                <a href="#project">
+                    <p>Back to Top</p>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+        <div id="socialMedia">
+            <h2>My Social Media</h2>
+            <a href="https://x.com/_wanxian_23" id="x" target="_blank"></a>
+            <a href="https://www.facebook.com/wanxian.chong5/" id="fb" target="_blank"></a>
+            <a href="https://www.instagram.com/_wanxian_23/" id="ig" target="_blank"></a>
+            <a href="https://www.youtube.com/@_wanxian_23" id="yt" target="_blank"></a>
+        </div>
+
+        <div class="embed-map-fixed" role="schoolGoogleMap">
+            <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Universiti%20Teknikal%20Malaysia%20Melaka&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
+                    href="https://sprunkiretake.net"
+                    style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki
+                    retake</a></div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("arrowRightIcon").addEventListener("click", function () {
+            document.querySelector("main nav").classList.add("show");
+        });
+
+        document.getElementById("arrowLeftIcon").addEventListener("click", function () {
+            document.querySelector("main nav").classList.remove("show");
+        });
+
+        document.getElementById("burgerIcon").addEventListener("click", function () {
+            let headerNav = document.querySelector("header nav");
+            let mainNav = document.querySelector("main nav");
+            let arrowIcon = document.getElementById("arrowRightIcon");
+
+            headerNav.classList.toggle("show");
+
+            if (headerNav.classList.contains("show")) {
+                arrowIcon.style.marginTop = "286px";
+                mainNav.style.marginTop = "286px";
+            } else {
+                arrowIcon.style.marginTop = "89px";
+                mainNav.style.marginTop = "89px";
+            }
+        });
+    </script>
+</body>
+
+</html>

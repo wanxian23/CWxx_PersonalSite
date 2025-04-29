@@ -1,0 +1,321 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(236, 234, 234);
+    /* background-image: url("../Image/backgroundGif.gif"); */
+    color: black;
+    margin: 0;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 8px 0;
+    box-shadow: 2px 2px 60px 2px lightblue;
+}
+
+header #logo {
+    font-size: 15px;
+    display: flex;
+    width: 20%;
+}
+
+header #logo a.img {
+    display: block;
+    margin-top: 5px;;
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("Image/me/logo.png");
+}
+
+header #logo a.text
+{
+    text-decoration: none;
+    text-shadow: 2px 2px 10px orange;
+    transition: 0.2s;
+}
+
+header #logo a.text:active
+{
+    color: white;
+    text-shadow: 0px 0px white;
+}
+
+header nav {
+    display: flex;
+    width: 60%;
+}
+
+header box-icon {
+    width: 4%;
+    height: 3%;
+    display: none;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 10px 3%;
+    height: 45px;
+    color: black;
+    /* By putting transition 0.2s in original */
+    /* After it being hover, things will wait for 0.2s to change (Like a transition) */
+    transition: 0.2s;
+}
+
+header nav a:hover {
+    border-bottom: 5px solid black;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    border-bottom: 5px solid black;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20%;
+    box-shadow: 2px 2px 60px 2px lightblue;
+}
+
+footer #socialMedia {
+    text-align: center;
+}
+
+footer #socialMedia h2 {
+    margin-top: 10%;
+}
+
+
+footer #socialMedia a {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+footer #socialMedia a:hover {
+    box-shadow: 1px 1px 15px black;
+}
+
+footer #socialMedia a#x {
+    background-image: url("Image/socialMedia/x.png");
+}
+
+footer #socialMedia a#x:hover {
+    background-image: url("Image/socialMedia/x_clicked.png");
+}
+
+footer #socialMedia a#fb {
+    background-image: url("Image/socialMedia/facebook.png");
+}
+
+footer #socialMedia a#fb:hover {
+    background-image: url("Image/socialMedia/facebook_clicked.png");
+}
+
+footer #socialMedia a#ig {
+    background-image: url("Image/socialMedia/insta.png");
+}
+
+footer #socialMedia a#ig:hover {
+    background-image: url("Image/socialMedia/insta_clicked.png");
+}
+
+footer #socialMedia a#yt {
+    background-image: url("Image/socialMedia/youtube.png");
+}
+
+footer #socialMedia a#yt:hover {
+    background-image: url("Image/socialMedia/youtube_clicked.png");
+}
+
+.center {
+    text-align: center;
+}
+
+.embed-map-fixed {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    margin: 3% 0 3% 0;
+}
+
+.embed-map-container {
+    overflow: hidden;
+    background: none !important;
+    width: 400px;
+    height: 250px;
+    box-shadow: 5px 5px 15px 2px gray;
+    transition: 0.2s;
+}
+
+.embed-map-container:hover {
+    box-shadow: 5px 5px 15px 2px black;
+}
+
+.embed-map-frame {
+    width: 400px !important;
+    height: 250px !important;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        min-height: 13%;
+    }
+    header #logo {
+        font-size: 10px;
+        width: 50%;
+    }
+
+    header nav {
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+        width: 25%;
+        text-align: right;
+        height: 0;
+        transition: height 0.3s ease, opacity 0.3s;
+        font-size: 14px;
+    }
+
+    header nav.show {
+        visibility: visible;
+        opacity: 1;
+        height: 100%;
+    }
+
+    header nav a:hover {
+        border-bottom: 0;
+        border-left: 5px solid black;
+    }
+    
+    
+    header box-icon {
+        display: block;
+        width: 8%;
+        cursor: pointer;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px 20% 50px 20%;
+    }
+
+    .embed-map-fixed {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        margin: 3% auto 3% auto;
+    }
+
+    .embed-map-container {
+        overflow: hidden;
+        background: none !important;
+        width: 250px;
+        height: 250px;
+        box-shadow: 5px 5px 15px 2px gray;
+        transition: 0.2s;
+        margin: 20px auto;
+    }
+
+    .embed-map-container:hover {
+        box-shadow: 5px 5px 15px 2px black;
+    }
+
+    .embed-map-frame {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    header {
+        min-height: 13%;
+        overflow: visible;
+    }
+    
+    header #logo {
+        font-size: 10px;
+        width: 30%;
+    }
+
+    header nav {
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+        width: 20%;
+        text-align: right;
+        height: 0;
+        transition: height 0.3s ease, opacity 0.3s;
+        font-size: 14px;
+    }
+
+    header nav.show {
+        visibility: visible;
+        opacity: 1;
+        height: 100%;
+    }
+
+    header nav a {
+        padding: 10px 0;
+    }
+
+    header nav a:hover {
+        border-bottom: 0;
+        border-left: 5px solid black;
+    }
+    
+    
+    header box-icon {
+        display: block;
+        width: 5%;
+        cursor: pointer;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px 20% 50px 20%;
+    }
+
+    .embed-map-fixed {
+        position:unset;
+        width: 350px;
+        height: 250px;
+        margin: 3% auto 3% auto;
+    }
+
+    .embed-map-container {
+        overflow: hidden;
+        background: none !important;
+        width: 350px;
+        height: 250px;
+        box-shadow: 5px 5px 15px 2px gray;
+        transition: 0.2s;
+        margin: 20px auto;
+    }
+
+    .embed-map-container:hover {
+        box-shadow: 5px 5px 15px 2px black;
+    }
+
+    .embed-map-frame {
+        width: 350px !important;
+        height: 250px !important;
+    }
+}

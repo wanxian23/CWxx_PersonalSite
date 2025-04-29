@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="Image/me/tabLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Use to apply logo from Internet "Boxicons Website" -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <style>
+        main {
+            display: flex;
+            gap: 3%;
+            padding: 2% 5%;
+            justify-content: space-between;
+            border: 1px solid;
+            box-shadow: 1px 1px 15px 1px gray;
+            width: 80%;
+            margin: 60px auto;
+            transition: 0.2s;
+            word-break: break-word;
+            border-radius: 10px;
+        }
+
+        main:hover {
+            width: 81%;
+            box-shadow: 1px 1px 15px 1px black;
+        }
+
+
+        main div#mainInfo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main div#mainInfo h2 {
+            font-size: 22px;
+            height: 5px;
+        }
+
+        main div#mainInfo h1 {
+            font-size: 22px;
+        }
+
+        main div#mainInfo h1 span {
+            font-size: 32px;
+            text-shadow: 2px 2px 3px rgb(151, 149, 196);
+            transition: 0.3s;
+            display: block;
+        }
+
+        main div#mainInfo h1 span:hover {
+            text-shadow: 2px 2px 3px rgb(189, 123, 66);
+        }
+
+        main img {
+            width: 25%;
+            border-radius: 50px;
+            box-shadow: 1px 1px 20px 1px gray;
+            transition: 0.2s;
+        }
+
+        main img:hover {
+            box-shadow: 1px 1px 20px 1px rgb(79, 78, 78);
+        }
+
+        main div#mainInfo div#personalInfo {
+            margin: 20px 0 0 0;
+            font-size: 18px;
+        }
+
+        main table {
+            text-align: left;
+            padding: 12px 0;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        main th,
+        main td {
+            padding: 3px;
+        }
+
+        main td a {
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        main td a:hover {
+            text-shadow: 1px 1px 10px gray;
+        }
+
+        main td a:active {
+            color: white;
+            text-shadow: none;
+        }
+
+        @media (min-width: 400px) and (max-width: 850px) {
+            main {
+                display: flex;
+                flex-direction: column;
+                padding: 30px 22px;
+                gap: 20px;
+                text-align: cen;
+            }
+
+            main div#mainInfo h2 {
+                font-size: 16px;
+            }
+
+            main div#mainInfo h1 {
+                font-size: 16px;
+            }
+
+            main div#mainInfo h1 span {
+                font-size: 20px;
+                display: block;
+            }
+
+            main img {
+                order: 1;
+                width: 60%;
+                border-radius: 25px;
+                box-shadow: 1px 1px 20px 1px gray;
+                transition: 0.2s;
+                margin: 0 auto 0 auto;
+            }
+
+            main div#mainInfo {
+                order: 2;
+            }
+
+            main table {
+                font-size: 14px;
+            }
+
+            main div#mainInfo div#personalInfo {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 850px) and (max-width: 1200px) {
+            main {
+                padding: 5%;
+                width: 85%;
+            }
+
+            main:hover {
+                width: 86%;
+                box-shadow: 1px 1px 15px 1px black;
+            }
+
+            main div#mainInfo h2 {
+                font-size: 16px;
+                height: 5px;
+            }
+
+            main div#mainInfo h1 {
+                font-size: 16px;
+            }
+
+            main div#mainInfo h1 span {
+                font-size: 24px;
+            }
+
+            main img {
+                width: 40%;
+                border-radius: 25px;
+            }
+
+            main table {
+                font-size: 16px;
+            }
+
+            main div#mainInfo div#personalInfo {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html" class="img"></a>
+            <a href="index.html" class="text">
+                <h1>CWXxx Web</h1>
+            </a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <box-icon name='menu' id="burgerIcon"></box-icon>
+    </header>
+
+    <main>
+        <div id="mainInfo">
+            <h2>Hi! I am Chong Wan Xian Casey</h2>
+            <h1>I am studying <br> <span> Diploma in Computer Science </span> at <br> <span> Universiti Teknikal
+                    Malaysia
+                    Melaka </span></h1>
+            <div id="personalInfo">
+                Here is my personal information:
+                <table>
+                    <tr>
+                        <th>My Age</th>
+                        <th>:</th>
+                        <td>20</td>
+                    </tr>
+
+                    <tr>
+                        <th>Personal Email Address</th>
+                        <th>:</th>
+                        <td>xianxian599@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <th>School Email Address</th>
+                        <th>:</th>
+                        <td>d032310439@student.utem.edu.my</td>
+                    </tr>
+
+                    <tr>
+                        <th>My Github Account</th>
+                        <th>:</th>
+                        <td><a href="https://github.com/wanxian23" target="_blank">Click Here to Redirect</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <img src="Image/me/cwx.jpg" alt="myImage">
+    </main>
+
+    <footer>
+
+        <div id="socialMedia">
+            <h2>My Social Media</h2>
+            <a href="https://x.com/_wanxian_23" id="x" target="_blank"></a>
+            <a href="https://www.facebook.com/wanxian.chong5/" id="fb" target="_blank"></a>
+            <a href="https://www.instagram.com/_wanxian_23/" id="ig" target="_blank"></a>
+            <a href="https://www.youtube.com/@_wanxian_23" id="yt" target="_blank"></a>
+        </div>
+
+        <div class="embed-map-fixed" role="schoolGoogleMap">
+            <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Universiti%20Teknikal%20Malaysia%20Melaka&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
+                    href="https://sprunkiretake.net"
+                    style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki
+                    retake</a></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

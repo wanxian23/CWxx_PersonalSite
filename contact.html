@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="Image/me/tabLogo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Use to apply logo from Internet "Boxicons Website" -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <style>
+        main article {
+            padding: 2% 0;
+            box-shadow: 1px 1px 15px 1px gray;
+            width: 60%;
+            margin: 60px auto;
+            transition: 0.2s;
+            text-align: center;
+            word-break: break-word;
+            border-radius: 10px;
+        }
+
+        main article:hover {
+            width: 61%;
+            box-shadow: 1px 1px 15px 1px black;
+        }
+
+        main article table {
+            text-align: left;
+            margin: 0 auto 0 auto;
+        }
+
+        main article#extra table {
+            text-align: left;
+            margin: 0 auto 0 auto;
+            width: 80%;
+        }
+
+        main article table input.button {
+            background-color: white;
+            padding: 10px 15px;
+            box-shadow: 1px 1px 10px gray;
+            border: 1px solid;
+            transition: 0.3s;
+        }
+
+        main article table input.button:hover {
+            box-shadow: 1px 1px 10px red;
+        }
+
+        main article table#formB4Submit td.inputTd {
+            width: 300px;
+        }
+
+        main article table input.inputBox {
+            width: inherit;
+        }
+
+        main article table textarea {
+            width: inherit;
+            max-height: 300px;
+            resize: vertical;
+        }
+
+        main table.formContact {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 1px 1px 10px lightblue;
+            transition: 0.2s;
+            width: 85%;
+        }
+
+        main table.formContact:hover {
+            box-shadow: 1px 1px 10px rgb(72, 132, 152);
+        }
+
+        article#contactAfterSubmit {
+            display: none;
+        }
+
+        article#contactAfterSubmit table td {
+            width: 25%;
+        }
+
+        #contactFormMobile {
+            display: none;
+        }
+
+        article#contactAfterSubmit table#tableB4SubmitMobile {
+            display: none;
+        }
+
+        @media (max-width: 650px) {
+            main article {
+                padding: 4% 0;
+                width: 85%;
+                font-size: 14px;
+            }
+
+            main article:hover {
+                width: 86%;
+            }
+
+            #contactFormDesktop {
+                display: none;
+            }
+
+            #contactFormMobile {
+                display: block;
+            }
+
+            #contactFormMobile table.formContact {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+
+            main article#extra table {
+                text-align: left;
+                margin: 0 auto 0 auto;
+                width: 90%;
+            }
+
+            main article table#formB4SubmitMobile td.inputTd {
+                width: 100%;
+            }
+
+            article#contactAfterSubmit table#tableB4SubmitDesktop {
+                display: none;
+            }
+
+            article#contactAfterSubmit table#tableB4SubmitMobile {
+                width: 80%;
+                height: 100%;
+                display: block;
+            }
+
+            article#contactAfterSubmit table#tableB4SubmitMobile td {
+                width: 48%;
+            }
+        }
+
+        @media (min-width: 650px) and (max-width: 1200px) {
+            main article {
+                padding: 4% 0;
+                width: 72%;
+                font-size: 14px;
+            }
+
+            main article:hover {
+                width: 73%;
+            }
+
+            #contactFormDesktop table.formContact {
+                width: 85%;
+                margin-bottom: 15px;
+            }
+
+            main article table#formB4Submit td.inputTd {
+                width: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html" class="img"></a>
+            <a href="index.html" class="text">
+                <h1>CWXxx Web</h1>
+            </a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <box-icon name='menu' id="burgerIcon"></box-icon>
+    </header>
+
+    <main>
+        <article id="extra">
+            <table>
+                <tr>
+                    <th><label for="uniSite">Redicrect <br> UTeM Sites</label></th>
+                    <td>:</td>
+                    <td>
+                        <select id="site" size="1">
+                            <option value="http://www.utem.edu.my">UTeM</option>
+                            <option value="http://ftmk.utem.edu.my">FTMK</option>
+                            <option value="http://ulearn.utem.edu.my">ULearn</option>
+                        </select>
+                    </td>
+                    <th><label for="bgColor">Background <br> Color</label></th>
+                    <td>:</td>
+                    <td>
+                        <select id="color" size="1">
+                            <option value="Pink">Pink</option>
+                            <option value="Khaki">Khaki</option>
+                            <option value="Skyblue">Sky Blue</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </article>
+        <article id="contactAfterSubmit">
+            <h1>Thanks For Submitting!</h1>
+            <p><b>Here are all your information.</b></p>
+            <table width="600" height="400" cellspacing="20" class="formContact" id="tableB4SubmitDesktop">
+                <tr>
+                    <th><Label for="name">Name: </Label></th>
+                    <td class="inputTd"><label for="name" id="nameOutputDesktop"></label></td>
+
+                    <th><Label for="age">Age: </Label></th>
+                    <td class="inputTd"><label for="age" id="ageOutputDesktop"></label></td>
+                </tr>
+                <tr>
+                    <th><Label for="date">Date of Birth: </Label></th>
+                    <td class="inputTd"><label for="birth" id="birthOutputDesktop"></label></td>
+
+                    <th><Label for="phone">Mobile Phone: </Label></th>
+                    <td class="inputTd"><label for="phone" id="phoneOutputDesktop"></label></td>
+                </tr>
+                <tr>
+                    <th><Label for="country">Country: </Label></th>
+                    <td class="inputTd"><label for="country" id="countryOutputDesktop"></label></td>
+
+                    <th><Label for="gender">Gender: </Label></th>
+                    <td class="inputTd"><label for="gender" id="genderOutputDesktop"></label></td>
+                </tr>
+                <tr>
+                    <th><Label for="email">Email: </Label></th>
+                    <td class="inputTd"><label for="email" id="emailOutputDesktop"></label></td>
+
+                    <th><label for="website">Personal/ Company Website: </label></th>
+                    <td class="inputTd"><label for="personalSite" id="personalSiteOutputDesktop"></label></td>
+                </tr>
+                <tr>
+                    <th><label for="contact">Preferred Method of Contact: </label></th>
+                    <td class="inputTd"><label for="methodContact" id="methodContactOutputDesktop"></label></td>
+
+                    <th><label for="message">Message: </label></th>
+                    <td class="inputTd"><label for="message" id="messageOutputDesktop"></label></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="center">
+                        <button type="button" id="okButtonDesktop">OK</button>
+                    </td>
+                </tr>
+            </table>
+            <table width="600" height="400" cellspacing="20" class="formContact" id="tableB4SubmitMobile">
+                <tr>
+                    <th><Label for="name">Name: </Label></th>
+                    <td class="inputTd"><label for="name" id="nameOutputMobile"></label></td>
+                </tr>
+                <tr>
+                    <th><Label for="age">Age: </Label></th>
+                    <td class="inputTd"><label for="age" id="ageOutputMobile"></label></td>
+                </tr>
+                <tr>
+                    <th><Label for="date">Date of Birth: </Label></th>
+                    <td class="inputTd"><label for="birth" id="birthOutputMobile"></label></td>
+                </tr>
+                <tr>
+                    <th><Label for="phone">Mobile Phone: </Label></th>
+                    <td class="inputTd"><label for="phone" id="phoneOutputMobile"></label></td>
+                </tr>
+                <tr>
+                    <th><Label for="country">Country: </Label></th>
+                    <td class="inputTd"><label for="country" id="countryOutputMobile"></label></td>
+                </tr>
+                <tr>
+                    <th><Label for="gender">Gender: </Label></th>
+                    <td class="inputTd"><label for="gender" id="genderOutputMobile"></label></td>
+                </tr>
+                <tr>
+                    <th><Label for="email">Email: </Label></th>
+                    <td class="inputTd"><label for="email" id="emailOutputMobile"></label></td>
+                </tr>
+                <tr>
+                    <th><label for="website">Personal/ <br>Company Website: </label></th>
+                    <td class="inputTd"><label for="personalSite" id="personalSiteOutputMobile"></label></td>
+                </tr>
+                <tr>
+                    <th><label for="contact">Preferred Method <br> of Contact: </label></th>
+                    <td class="inputTd"><label for="methodContact" id="methodContactOutputMobile"></label></td>
+                </tr>
+                <tr>
+                    <th><label for="message">Message: </label></th>
+                    <td class="inputTd"><label for="message" id="messageOutputMobile"></label></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="center">
+                        <button type="button" id="okButtonMobile">OK</button>
+                    </td>
+                </tr>
+            </table>
+        </article>
+        <article id="contactFormInput">
+            <form action="" id="contactFormDesktop">
+                <h1>Contact Me</h1>
+                <p><b>Please add your contact details here.</b></p>
+                <p style="color: red;"><b>
+                        ** Information you enter below won't be saved. <br>
+                        Cuz this website is for study/ exercise purpose.
+                    </b></p>
+
+                <table width="600" height="400" cellspacing="20" class="formContact" id="formB4Submit">
+                    <tr>
+                        <th><Label for="name">Name</Label></th>
+                        <td>:</td>
+                        <td class="inputTd"><input type="text" placeholder="Enter Your Name" required="required"
+                                autofocus="autofocus" class="inputBox" id="nameDesktop">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><Label for="age">Age</Label></th>
+                        <td>:</td>
+                        <td class="inputTd"><input type="text" placeholder="Enter Your Age" required="required"
+                                class="inputBox" id="ageDesktop"></td>
+                    </tr>
+                    <tr>
+                        <th><Label for="date">Date of Birth</Label></th>
+                        <td>:</td>
+                        <td class="inputTd"><input type="date" required="required" class="inputBox" id="birthDesktop">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><Label for="phone">Mobile Phone</Label></th>
+                        <td>:</td>
+                        <td class="inputTd"><input type="tel" placeholder="Enter Your Mobile Phone" required="required"
+                                class="inputBox" id="phoneDesktop">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><Label for="country">Country</Label></th>
+                        <td>:</td>
+                        <td class="inputTd">
+                            <select id="countryDesktop" name="country">Country
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Indonesia">Idonesia</option>
+                                <option value="Phillipine">Phillipine</option>
+                                <option value="Singapore">Singapore</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><Label for="gender">Gender</Label></th>
+                        <td>:</td>
+                        <td class="inputTd">
+                            <input type="radio" value="Male" name="genderDesktop">Male
+                            <input type="radio" value="Female" required="required" name="genderDesktop">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><Label for="email">Email</Label></th>
+                        <td>:</td>
+                        <td class="inputTd"><input type="email" placeholder="Enter Your Email" required="required"
+                                class="inputBox" id="emailDesktop"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="website">Personal/ Company Website</label></th>
+                        <td>:</td>
+                        <td class="inputTd"><input type="url" placeholder="Enter Your URL" class="inputBox"
+                                id="personalSiteDesktop"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="contact">Preferred Method of Contact</label></th>
+                        <td>:</td>
+                        <td class="inputTd">
+                            <input type="checkbox" value="Phone" name="contactDesktop">Phone
+                            <input type="checkbox" value="Contact" name="contactDesktop">Email
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="message">Message</label></th>
+                        <td>:</td>
+                        <td class="inputTd"><textarea name="message" id="messageDesktop"
+                                placeholder="Type Your Message Here..."></textarea>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <th></th>
+                        <td></td>
+                        <td class="inputTd">
+                            <input type="reset" id="resetDesktop" value="Clear" class="button">
+                            <input type="submit" id="submitDesktop" value="Submit" class="button">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <form action="" id="contactFormMobile">
+                <h1>Contact Me</h1>
+                <p><b>Please add your contact details here.</b></p>
+                <p style="color: red; font-size: 12px;"><b>
+                        ** Information below won't be saved. <br>
+                        Cuz website is for study/ exercise purpose.
+                    </b></p>
+
+                <table width="600" height="400" cellspacing="20" class="formContact" id="formB4SubmitMobile">
+                    <tr>
+                        <th><Label for="name">Name</Label></th>
+                    </tr>
+                    <tr>
+                        <td class="inputTd"><input type="text" placeholder="Enter Your Name" required="required"
+                                autofocus="autofocus" class="inputBox" id="nameMobile">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><Label for="age">Age</Label></th>
+                    </tr>
+                    <tr>
+                        <td class="inputTd"><input type="text" placeholder="Enter Your Age" required="required"
+                                class="inputBox" id="ageMobile"></td>
+                    </tr>
+                    <tr>
+                        <th><Label for="date">Date of Birth</Label></th>
+                    </tr>
+                    <tr>
+                        <td class="inputTd"><input type="date" required="required" class="inputBox" id="birthMobile">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><Label for="phone">Mobile Phone</Label></th>
+                    </tr>
+                    <tr>
+                        <td class="inputTd"><input type="tel" placeholder="Enter Your Mobile Phone" required="required"
+                                class="inputBox" id="phoneMobile">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><Label for="country">Country</Label></th>
+                    </tr>
+                    <tr>
+                        <td class="inputTd">
+                            <select id="countryMobile" name="country">Country
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Indonesia">Idonesia</option>
+                                <option value="Phillipine">Phillipine</option>
+                                <option value="Singapore">Singapore</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><Label for="gender">Gender</Label></th>
+                    </tr>
+                    <tr>
+                        <td class="inputTd">
+                            <input type="radio" value="Male" name="genderMobile">Male
+                            <input type="radio" value="Female" required="required" name="genderMobile">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><Label for="email">Email</Label></th>
+                    </tr>
+                    <tr>
+                        <td class="inputTd"><input type="email" placeholder="Enter Your Email" required="required"
+                                class="inputBox" id="emailMobile"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="website">Personal/ Company Website</label></th>
+                    </tr>
+                    <tr>
+                        <td class="inputTd"><input type="url" placeholder="Enter Your URL" class="inputBox"
+                                id="personalSiteMobile"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="contact">Preferred Method of Contact</label></th>
+                    </tr>
+                    <tr>
+                        <td class="inputTd">
+                            <input type="checkbox" value="Phone" name="contactMobile">Phone
+                            <input type="checkbox" value="Contact" name="contactMobile">Email
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="message">Message</label></th>
+                    </tr>
+                    <tr>
+                        <td class="inputTd"><textarea name="message" id="messageMobile"
+                                placeholder="Type Your Message Here..."></textarea>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td class="inputTd">
+                            <input type="reset" id="resetMobile" value="Clear" class="button">
+                            <input type="submit" id="submitMobile" value="Submit" class="button">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div id="socialMedia">
+            <h2>My Social Media</h2>
+            <a href="https://x.com/_wanxian_23" id="x" target="_blank"></a>
+            <a href="https://www.facebook.com/wanxian.chong5/" id="fb" target="_blank"></a>
+            <a href="https://www.instagram.com/_wanxian_23/" id="ig" target="_blank"></a>
+            <a href="https://www.youtube.com/@_wanxian_23" id="yt" target="_blank"></a>
+        </div>
+
+        <div class="embed-map-fixed" role="schoolGoogleMap">
+            <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Universiti%20Teknikal%20Malaysia%20Melaka&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
+                    href="https://sprunkiretake.net"
+                    style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki
+                    retake</a></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("site").addEventListener("change", function () {
+            let url = document.getElementById("site").value;
+
+            // Use window.open() if u wanna apply target
+            // Use window.location = "", if you wanna apply default "_self"
+            window.open(url, "_blank");
+        });
+
+        document.getElementById("color").addEventListener("change", function () {
+            let color = document.getElementById("color").value;
+
+            // Since Im using querySelectorAll, so it will return more than 1 article
+            // So, to apply all article into new color, use forEach
+            // article =>, the name "article" is argument name, can change to whatever
+            // Exp: .forEach(x => x.style.backgroundColor = color;
+            // x is referring to article tag cuz "main article"!
+            document.querySelectorAll("main article").forEach(article => {
+                article.style.backgroundColor = color;
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("contactFormDesktop").addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                let name = document.getElementById("nameDesktop").value;
+                let age = document.getElementById("ageDesktop").value;
+                let date = document.getElementById("birthDesktop").value;
+                let phone = document.getElementById("phoneDesktop").value;
+                let country = document.getElementById("countryDesktop").value;
+                let gender = document.getElementsByName("genderDesktop");
+                let genderChoose = "";
+                for (let i = 0; i < gender.length; i++) {
+                    if (gender[i].checked) {
+                        genderChoose = gender[i].value;
+                        break;
+                    }
+                }
+                let email = document.getElementById("emailDesktop").value;
+                let personalSite = document.getElementById("personalSiteDesktop").value;
+                let methodContact = document.getElementsByName("contactDesktop");
+                let methodContactChoose = [];
+                for (let i = 0; i < methodContact.length; i++) {
+                    if (methodContact[i].checked) {
+                        methodContactChoose.push(methodContact[i].value);
+                    }
+                }
+                let message = document.getElementById("messageDesktop").value;
+
+                document.getElementById("nameOutputDesktop").innerHTML = name;
+                document.getElementById("ageOutputDesktop").innerHTML = age;
+                document.getElementById("birthOutputDesktop").innerHTML = date;
+                document.getElementById("phoneOutputDesktop").innerHTML = phone;
+                document.getElementById("countryOutputDesktop").innerHTML = country;
+                document.getElementById("genderOutputDesktop").innerHTML = genderChoose;
+                document.getElementById("emailOutputDesktop").innerHTML = email;
+                document.getElementById("personalSiteOutputDesktop").innerHTML = "<a href = '" + personalSite + "' target = '_blank'>Click Here!</a>";
+                document.getElementById("methodContactOutputDesktop").innerHTML = methodContactChoose.join(", ");
+                document.getElementById("messageOutputDesktop").innerHTML = message;
+
+                document.getElementById("nameOutputMobile").innerHTML = name;
+                document.getElementById("ageOutputMobile").innerHTML = age;
+                document.getElementById("birthOutputMobile").innerHTML = date;
+                document.getElementById("phoneOutputMobile").innerHTML = phone;
+                document.getElementById("countryOutputMobile").innerHTML = country;
+                document.getElementById("genderOutputMobile").innerHTML = genderChoose;
+                document.getElementById("emailOutputMobile").innerHTML = email;
+                document.getElementById("personalSiteOutputMobile").innerHTML = "<a href = '" + personalSite + "' target = '_blank'>Click Here!</a>";
+                document.getElementById("methodContactOutputMobile").innerHTML = methodContactChoose.join(", ");
+                document.getElementById("messageOutputMobile").innerHTML = message;
+
+                document.getElementById("contactAfterSubmit").style.display = "block";
+                document.getElementById("contactFormInput").style.display = "none";
+                document.getElementById("contactFormDesktop").reset();
+            });
+
+            document.getElementById("contactFormMobile").addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                let name = document.getElementById("nameMobile").value;
+                let age = document.getElementById("ageMobile").value;
+                let date = document.getElementById("birthMobile").value;
+                let phone = document.getElementById("phoneMobile").value;
+                let country = document.getElementById("countryMobile").value;
+                let gender = document.getElementsByName("genderMobile");
+                let genderChoose = "";
+                for (let i = 0; i < gender.length; i++) {
+                    if (gender[i].checked) {
+                        genderChoose = gender[i].value;
+                        break;
+                    }
+                }
+                let email = document.getElementById("emailMobile").value;
+                let personalSite = document.getElementById("personalSiteMobile").value;
+                let methodContact = document.getElementsByName("contactMobile");
+                let methodContactChoose = [];
+                for (let i = 0; i < methodContact.length; i++) {
+                    if (methodContact[i].checked) {
+                        methodContactChoose.push(methodContact[i].value);
+                    }
+                }
+                let message = document.getElementById("messageMobile").value;
+
+                document.getElementById("nameOutputDesktop").innerHTML = name;
+                document.getElementById("ageOutputDesktop").innerHTML = age;
+                document.getElementById("birthOutputDesktop").innerHTML = date;
+                document.getElementById("phoneOutputDesktop").innerHTML = phone;
+                document.getElementById("countryOutputDesktop").innerHTML = country;
+                document.getElementById("genderOutputDesktop").innerHTML = genderChoose;
+                document.getElementById("emailOutputDesktop").innerHTML = email;
+                document.getElementById("personalSiteOutputDesktop").innerHTML = "<a href = '" + personalSite + "' target = '_blank'>Click Here!</a>";
+                document.getElementById("methodContactOutputDesktop").innerHTML = methodContactChoose.join(", ");
+                document.getElementById("messageOutputDesktop").innerHTML = message;
+
+                document.getElementById("nameOutputMobile").innerHTML = name;
+                document.getElementById("ageOutputMobile").innerHTML = age;
+                document.getElementById("birthOutputMobile").innerHTML = date;
+                document.getElementById("phoneOutputMobile").innerHTML = phone;
+                document.getElementById("countryOutputMobile").innerHTML = country;
+                document.getElementById("genderOutputMobile").innerHTML = genderChoose;
+                document.getElementById("emailOutputMobile").innerHTML = email;
+                document.getElementById("personalSiteOutputMobile").innerHTML = "<a href = '" + personalSite + "' target = '_blank'>Click Here!</a>";
+                document.getElementById("methodContactOutputMobile").innerHTML = methodContactChoose.join(", ");
+                document.getElementById("messageOutputMobile").innerHTML = message;
+
+                document.getElementById("contactAfterSubmit").style.display = "block";
+                document.getElementById("contactFormInput").style.display = "none";
+                document.getElementById("contactFormMobile").reset();
+            });
+        });
+
+        document.getElementById("okButtonDesktop").addEventListener("click", function () {
+            window.location = "contact.html";
+        });
+
+        document.getElementById("okButtonMobile").addEventListener("click", function () {
+            window.location = "contact.html";
+        });
+    </script>
+
+</body>
+
+</html>

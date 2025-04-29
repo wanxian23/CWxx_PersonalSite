@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="Image/me/tabLogo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Use to apply logo from Internet "Boxicons Website" -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <style>
+        main {
+            padding: 2% 3%;
+        }
+
+        @media (max-width: 650px) {
+            main {
+                padding: 2% 4%;
+            }
+
+            img {
+                width: 80%;
+                height: 80%;
+            }
+
+            iframe {
+                width: 80%;
+                height: 80%;
+            }
+
+            object {
+                width: 80%;
+                height: 100%;
+            }
+
+            video {
+                width: 80%;
+                height: 80%;
+            }
+        }
+
+        @media (min-width: 650px) and (max-width: 1200px) {
+            main {
+                padding: 2% 4%;
+            }
+
+            img {
+                width: 50%;
+                height: 50%;
+            }
+
+            iframe {
+                width: 70%;
+                height: 300px;
+            }
+
+            object {
+                width: 70%;
+                height: 300px;
+            }
+
+            video {
+                width: 70%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html" class="img"></a>
+            <a href="index.html" class="text">
+                <h1>CWXxx Web</h1>
+            </a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <box-icon name='menu' id="burgerIcon"></box-icon>
+    </header>
+
+    <main>
+        <a name="top">
+            <div>
+                <h3>Details About My Projects</h3>
+            </div>
+        </a>
+        <div role="ImageOfProjects">
+            <ol>
+                <li><label for="databaseProject"><strong>Learning Management System</strong> (Database Project
+                        since March 2024)</label><br><br>
+                    <ul>
+                        <li><label for="erd">Entity Relation Diagram</label><br><br>
+                            <img src="Image/db/erdDiagram.png" alt="ERD_of_Learning_Management_System" width="400"
+                                height="510">
+                        </li>
+
+                        <br>
+
+                        <li><label for="studentTable">Table from Data Dictionary (Student Table)</label><br><br>
+                            <img src="Image/db/studentTableDb.png" alt="Student_Table_Data_Dictionary" width="600"
+                                height="400">
+                        </li>
+
+                        <br>
+
+                        <li><label for="Example_of_DML_Select_Agreegation_n_Grouping_Operation">Example of DML
+                                Select Aggregation and Grouping Operation</label><br><br>
+                            <img src="Image/db/dmlSelectExpDb.png"
+                                alt="Example_of_DML_Select_Agreegation_n_Grouping_Operation" width="600" height="400">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="databaseProjYT">Youtube Video Presentation of the
+                                Project</label><br><br>
+                            <object data="https://www.youtube.com/embed/dHN-SxuRDz4" type="" width="650" height="400">
+                                <param name="allowFullScreen" value="true">
+                            </object>
+                        </li>
+                    </ul>
+                </li>
+
+                <br>
+
+                <li><label for="coaProject"><strong>A Simple Calculator</strong> (Computer Organization &
+                        Architecture since March
+                        2024)</label><br><br>
+
+                    <ul>
+                        <li>
+                            <label for="projOutput">Output of The Project</label><br><br>
+                            <img src="Image/coa/coaProjOutput1.png" alt="COA_Project_Output" width="500" height="450">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="projCode">Some View of Project Code</label><br><br>
+                            <img src="Image/coa/coaCode.png" alt="Part_of_the_Project_Code" width="500" height="450">
+                        </li>
+                    </ul>
+                </li>
+
+                <br>
+
+                <li><label for="animationProject"><strong>Friendship Boundaries Animation</strong> (Multimedia since
+                        March 2024)</label><br><br>
+                    <ul>
+                        <li>
+                            <label for="projCharacter">Characters of the Animation</label><br><br>
+                            <img src="Image/multimedia/animationCharacter1.png" alt="Animation_Project_Character">
+                            <img src="Image/multimedia/animationCharacter2.png" alt="Animation_Project_Character">
+                            <img src="Image/multimedia/animationCharacter3.png" alt="Animation_Project_Character">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="itemsAnimation">Items Use in the Animation</label><br><br>
+                            <img src="Image/multimedia/itemsAnimation.png" alt="Items_Use_In_The_Animation">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="animationYT">Youtube Video for the Animation</label><br><br>
+                            <iframe src="https://www.youtube.com/embed/x32VgpjLC6U
+                            " frameborder="0" width="650" height="400" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                </li>
+
+                <br>
+
+                <li>
+                    <label for="osProject"><strong>Paging & Segmentation</strong> (Operating System since July
+                        2024)</label><br><br>
+                    <ul>
+                        <li>
+                            <label for="buildingDesign">Building Design</label><br><br>
+                            <img src="Image/Apartments_Building_Segmentation.png"
+                                alt="Building Design of our OS Animation">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="OSAnimationVideo">Video of OS Animation</label><br>
+                            <!-- Since the video has 1 format only, so no need <source> tag -->
+                            <!-- If video contain multiple format, then we require multiple <source> tag to add those formats -->
+                            <video width="650" height="400" controls>
+                                <source src="Video/OS Project Animation.mp4" type="video/mp4">
+                            </video>
+
+                            <!-- or using direct method -->
+                            <!-- <video src="Video/OS Project Animation.mp4" type="video/mp4" width="650" height="400"
+                                controls></video> -->
+                        </li>
+                    </ul>
+                </li>
+
+                <br>
+
+                <li>
+                    <label for="traveBoHCIProj"><strong>TraveBo</strong> (Human Computer and Interaction since June
+                        2024)</label><br><br>
+                    <ul>
+                        <li>
+                            <label for="uiDesignWebsite">UI Design Website for Desktop Platform</label><br><br>
+                            <a
+                                href="https://app.visily.ai/projects/2300155f-55da-4376-8a24-1bc6aa7d6185/boards/994892/presenter?play-mode=Prototype">
+                                Website Play Mode
+                            </a>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="uiDesignWebsite">UI Design Website for Mobile Platform</label><br><br>
+                            <a
+                                href="https://app.visily.ai/projects/2300155f-55da-4376-8a24-1bc6aa7d6185/boards/994682/presenter?play-mode=Prototype">
+                                Mobile Play Mode
+                            </a>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="uiDesignWebsite">UI Design Website for Tablet Platform</label><br><br>
+                            <a
+                                href="https://app.visily.ai/projects/2300155f-55da-4376-8a24-1bc6aa7d6185/boards/994892/presenter?play-mode=Prototype">
+                                Tablet Play Mode
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <br>
+
+                <li>
+                    <label for="programmingProject"><strong>Currency Exchange System</strong> (Programming C++ since
+                        June 2024)</label><br><br>
+                    <ul>
+                        <li>
+                            <label for="structureChartProject">
+                                Stureture Chart of the System</label><br><br>
+                            <img src="Image/programming/structureChatProgrammingProj.png"
+                                alt="Structure Chart of the System" width="900" height="600">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="flowChartProgrammingProject">Part of FlowChart of the
+                                System</label><br><br>
+                            <img src="Image/programming/flowChartProgramminjgProj.png"
+                                alt="Part of FlowChart of the System" width="250" height="800">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="validOutput">Valid Version of the Output</label><br><br>
+                            <img src="Image/programming/programmingProjOutput1.png" alt="Valid Version of the Output 1"
+                                width="500" height="600">
+                            <img src="Image/programming/programmingProjOutput2.png" alt="Valid Version of the Output 1"
+                                width="500" height="600">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="inputFile">Input Files for Some Countries</label><br><br>
+                            <img src="Image/programming/aseanCountry.png" alt="Asean Country Input File Image"
+                                width="220" height="300">
+                            <img src="Image/programming/asiaCountry.png" alt="Asia Country Input File Image" width="250"
+                                height="300">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="outputtFile">Some Output Files</label><br><br>
+                            <img src="Image/programming/receiptProgProj.png"
+                                alt="Report Receipt Currency Exchange System Output File" width="350" height="500">
+                            <img src="Image/programming/userInfoOutputFile.png" alt="User Info Output File" width="250"
+                                height="500">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="programmingProjYT">Youtube Video Presentation of the
+                                Project</label><br><br>
+                            <iframe src="https://www.youtube.com/embed/N3A8i-ox28E" frameborder="0" width="650"
+                                height="400" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                </li>
+
+                <br>
+
+                <li>
+                    <label for="UniversityAccomodationSystem"><strong>University Accomodation
+                            System</strong> (System Analysis and Design since June 2024)</label><br><br>
+                    <ul>
+                        <li>
+                            <label for="projectCharter">Project Charter</label><br><br>
+                            <img src="Image/sad/projectCharter.png" alt="Proejct Charter Image 1" width="500"
+                                height="600"><br>
+                            <img src="Image/sad/projectCharter2.png" alt="Proejct Charter Image 2" width="500"
+                                height="600">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="ganttChart">Gantt Chart</label><br><br>
+                            <img src="Image/sad/ganttChart.png" alt="Gantt Chart of the System" width="500"
+                                height="300">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="contextDataFlowDiagram">Context Data Flow Diagram DFD</label><br><br>
+                            <img src="Image/sad/DFD.png" alt="Context Data Flow Diagram DFD of the System" width="600"
+                                height="400">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="dataFlowDiagramLevel0">Data Flow Diagram DFD Level 0</label><br><br>
+                            <img src="Image/sad/DFDLevel0.png" alt="Data Flow Diagram DFD Level 0 of the System"
+                                width="500" height="550">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="dataFlowDiagramLevel1">Data Flow Diagram DFD Level 1</label><br><br>
+                            <img src="Image/sad/DFDLevel1.png" alt="Data Flow Diagram DFD Level 1 of the System"
+                                width="600" height="400">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for=" entityRelationDiagram">Entity Relation Diagram</label><br><br>
+                            <img src="Image/sad/EERD.png" alt="Entity Relation Diagram of the System" width="500"
+                                height="550">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="inputDesign">Input Design</label><br><br>
+                            <img src="Image/sad/inputDesign.png" alt="Input Design of the System" width="600"
+                                height="400">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="outputDesign">Output Design</label><br><br>
+                            <img src="Image/sad/outputDesign.png" alt="Output Design of the System" width="600"
+                                height="400">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="sadProjYT">Youtube Video Presentation of the
+                                Project</label><br><br>
+                            <iframe src="https://www.youtube.com/embed/MGFjTgkMUvY" frameborder="0" width="650"
+                                height="400" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                </li>
+
+                <br>
+
+                <li>
+                    <label for="passwordReuseCSProject"><strong>Password Reuse</strong> (Computer Security since
+                        January 2025)</label><br><br>
+                    <ul>
+                        <li>
+                            <label for="csProjVideo">Video of CS Animation</label><br><br>
+                            <video src="Video/CS Video.mp4" width="650" height="400" controls></video>
+                        </li>
+                    </ul>
+                </li>
+
+                <br>
+
+                <li>
+                    <label for="phoneDirectoryDSAProject"><strong>Phone Directory Management System</strong> (Data
+                        Structure and Algotrithm since January 2025)</label><br><br>
+                    <ul>
+                        <li>
+                            <label for="sourceCodeHeader">Source Code for Header File</label><br><br>
+                            <img src="Image/dsa/sourceCodeHeader.png" alt="Source Code of Header File" width="400"
+                                height="550">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="sourceCodeImplementation">Source Code for Implementation
+                                File</label><br><br>
+                            <img src="Image/dsa/sourceCodeImplementation1.png"
+                                alt="Source Code of Implementation File Image 1" width="480" height="550">
+                            <img src="Image/dsa/sourceCodeImplementation2.png"
+                                alt="Source Code of Implementation File Image 2" width="480" height="550">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="sourceCodeMain">Source Code for Part of Main
+                                File</label><br><br>
+                            <img src="Image/dsa/sourceCodePartofMain.png" alt="Source Code of Part of Main File"
+                                width="450" height="550">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="inputOutputFile">Input & Output File (Small Database)</label><br><br>
+                            <img src="Image/dsa/contactRecordImage.png" alt="Input Output File to Record Contact Info">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="mainPage">Menu Page (Main Page)</label><br><br>
+                            <img src="Image/dsa/menuPage.png" alt="Menu Page (Main Page) of the System">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="addContactPage">Add Contact Page</label><br><br>
+                            <img src="Image/dsa/addContactPage.png" alt="Add Contact Page of the System">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="deleteContactPage">Delete Contact Page</label><br><br>
+                            <img src="Image/dsa/deleteContactImage.png" alt="Delete Contact Page of the System">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="searchContactPage">Search Contact Page</label><br><br>
+                            <img src="Image/dsa/searchContactPage.png" alt="Search Contact Page of the System">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="updateContactPage">Update Contact Page</label><br><br>
+                            <img src="Image/dsa/updateContactPage.png" alt="Update Contact Page of the System">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="sortingContactPage">Sorting Contact Page</label><br><br>
+                            <img src="Image/dsa/sortingContactPage.png" alt="Sorting Contact Page of the System">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="sortingContactPage">Sorting Contact Page</label><br><br>
+                            <img src="Image/dsa/sortingContactPage.png" alt="Sorting Contact Page of the System">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="displayContactPage">Display Contact Page</label><br><br>
+                            <img src="Image/dsa/displayContactPage.png" alt="Display Contact Page of the System">
+                        </li>
+                    </ul>
+                </li>
+
+                <br>
+
+                <li>
+                    <label for="EcoMotion Car Selling System"><strong>Car Selling System</strong> (Object-oriented
+                        Programming
+                        since January 2025)</label><br><br>
+                    <ul>
+                        <li>
+                            <label for="sourceCodeOOP">Part of Source Code of the System</label><br><br>
+                            <img src="Image/oop/sourceCodeOOP.png" alt="Part of Source Code of the System" width="800"
+                                height="400">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="overviewPage">Overview Page</label><br><br>
+                            <img src="Image/oop/ecomotionOverviewPage.png" alt="EcoMotion Overview Page" width="800"
+                                height="400">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="loginSignupPage">Login & Signup Page</label><br><br>
+                            <img src="Image/oop/ecomotionLoginPage.png" alt="EcoMotion Login Page" width="800"
+                                height="400"><br>
+                            <img src="Image/oop/ecomotionSignupPage.png" alt="EcoMotion Login Page" width="800"
+                                height="400">
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="descriptionPage">Description Page</label><br /><br />
+                            <img src="Image/oop/descriptionPage.png" alt="EcoMotion Description Page" width="800"
+                                height="400"><br>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="chooseColourPage">Choose Colour Page</label><br><br>
+                            <img src="Image/oop/chooseColorPage.png" alt="EcoMotion Choose Colour Page" width="800"
+                                height="400"><br>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="paymentSummaryPage">Payment Summary Page</label><br><br>
+                            <img src="Image/oop/paymentSummaryPage.png" alt="EcoMotion Payment Summary Page" width="800"
+                                height="500"><br>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="paymentMethodPage">Payment Method Page</label><br><br>
+                            <img src="Image/oop/paymentMethodPage.png" alt="EcoMotion Payment Method Page" width="800"
+                                height="600"><br>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="receiptPage">Receipt Page</label><br><br>
+                            <img src="Image/oop/receiptPage.png" alt="EcoMotion Receipt Page" width="800"
+                                height="1150"><br>
+                        </li>
+                    </ul>
+                </li>
+
+                <br>
+
+                <li>
+                    <label for="gentleGlowStudioDataCommProj"><strong>GentleGlow Studio</strong> (Data Communication
+                        and Networking since January 2025)</label>
+                    <ul>
+                        <li>
+                            <label for="dataCommBlogLink">GentleGlow Studio Blogger Link</label><br><br>
+                            <a href="https://gentleglowcompany.blogspot.com/" target="_blank">
+                                Click Here/ Image <br /><br />
+                                <img src="Image/dataComm/gentleGlowStudioBlogger.png"
+                                    alt="GentleGlow Studio Blogger Main Page" width="800" height="400">
+                            </a>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <label for="dataCommProjYT">Youtube Video Presentation of the
+                                Project</label><br /><br />
+                            <iframe src="https://www.youtube.com/embed/L0YsAsAlu4c" frameborder="0" width="650"
+                                height="400" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <a href="#top">
+            <p class="center">Back to Top</p>
+        </a>
+    </main>
+
+    <footer>
+
+        <div id="socialMedia">
+            <h2>My Social Media</h2>
+            <a href="https://x.com/_wanxian_23" id="x" target="_blank"></a>
+            <a href="https://www.facebook.com/wanxian.chong5/" id="fb" target="_blank"></a>
+            <a href="https://www.instagram.com/_wanxian_23/" id="ig" target="_blank"></a>
+            <a href="https://www.youtube.com/@_wanxian_23" id="yt" target="_blank"></a>
+        </div>
+
+        <div class="embed-map-fixed" role="schoolGoogleMap">
+            <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Universiti%20Teknikal%20Malaysia%20Melaka&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
+                    href="https://sprunkiretake.net"
+                    style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki
+                    retake</a></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
